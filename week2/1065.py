@@ -9,14 +9,14 @@ def hansu(num):
 
     cnt = 0
     for i in range(1, num + 1):
-        #if 를 안써줘서 list index out of range 오류남
-        if i<100:
-            cnt+=1
+        # if 를 안써줘서 list index out of range 오류남
+        if i < 100:
+            cnt += 1
 
         else:
             a = list(map(int, str(i)))
-            #if a[2] - a[1] == a[1] - a[0]:
-            if a[1]==(a[0]+a[2])/2:
+            # if a[2] - a[1] == a[1] - a[0]:
+            if a[1] == (a[0] + a[2]) / 2:
                 cnt += 1
 
     return cnt
@@ -44,5 +44,5 @@ number = int(input())
 if number < 100:
     print(number)
 
-else :
+else:
     print(hansu(number))

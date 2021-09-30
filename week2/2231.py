@@ -1,3 +1,5 @@
+#분해합
+
 import sys
 
 num=int(sys.stdin.readline())
