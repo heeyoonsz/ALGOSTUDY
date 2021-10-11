@@ -24,5 +24,6 @@ for i in range(num):
         # coin_list.append(ex)
         # # money %= i
 
-for i in coin_list:
-    print(i, end=' ')
+for i in range(num):
+    for j in coin_list:
+        print(j, end=' ')
